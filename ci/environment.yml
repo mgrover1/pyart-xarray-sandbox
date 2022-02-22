@@ -1,0 +1,18 @@
+name: pyart-xarray-dev
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python
+  - pyart
+  - gdal
+  - numpy
+  - scipy
+  - matplotlib
+  - netcdf4
+  - pytest
+  - trmm_rsl
+  - wradlib
+  - cartopy
+  - cvxopt
+  - xarray
