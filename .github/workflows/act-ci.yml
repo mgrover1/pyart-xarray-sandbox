@@ -24,7 +24,12 @@ jobs:
       fail-fast: false
       matrix:
         python-version: ['3.7', '3.8', '3.9']
-        os: [macOS, Windows]
+        os: [macOS, Windows, macos-latest]
+        include:
+          - os: macos-latest
+            PLAT: arm64
+            INTERFACE64: ''
+            platform: [x64]
     steps:
       - uses: actions/checkout@v2
       - uses: conda-incubator/setup-miniconda@v2
