@@ -24,7 +24,7 @@ jobs:
       fail-fast: false
       matrix:
         python-version: ['3.7', '3.8', '3.9']
-        os: [macOS, Windows, macos-latest]
+        os: [Windows, macos-latest]
         include:
           - os: macos-latest
             PLAT: arm64
