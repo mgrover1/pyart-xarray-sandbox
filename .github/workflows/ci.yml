@@ -24,7 +24,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python-version: ['3.7', '3.8', '3.9']
+        python-version: ['3.6']
     steps:
       - uses: actions/checkout@v2
       - uses: conda-incubator/setup-miniconda@v2
@@ -39,3 +39,8 @@ jobs:
           use-mamba: true
           miniforge-variant: Mambaforge
           environment-file: ci/environment.yml
+
+      - name: Set TRMM RSL path
+        run: |
+          export RSL_PATH=$CONDA/pkgs/trmm_rsl-1.49-3
+          print env

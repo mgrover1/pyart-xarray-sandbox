@@ -3,12 +3,12 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - python
-  - arm_pyart
+  - python=3.6
   - gdal
   - numpy
   - scipy
   - matplotlib
+  - pandas
   - netcdf4
   - pytest
   - trmm_rsl
@@ -16,3 +16,17 @@ dependencies:
   - cartopy
   - cvxopt
   - xarray
+  - sphinx
+  - ipython
+  - pandoc
+  - netcdf4
+  - pytest
+  - coin-or-cbc
+  - pkg-config
+  - pip
+  - pip:
+      - sphinx_rtd_theme
+      - sphinx_gallery
+      - sphinx-copybutton
+      - nbsphinx
+      - pooch
