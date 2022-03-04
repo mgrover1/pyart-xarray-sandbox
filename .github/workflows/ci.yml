@@ -43,5 +43,4 @@ jobs:
       - name: Set TRMM RSL path
         env:
           RSL_PATH: ${{ CONDA_PKGS_DIR }}/trmm_rsl-1.49-3 
-        run: |
-          ${{ RSL_PATH }}
+        run: echo "$RSL_PATH"
