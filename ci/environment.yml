@@ -21,8 +21,8 @@ dependencies:
   - pandoc
   - netcdf4
   - pytest
-  - coin-or-cbc
   - pkg-config
+  - xcollection
   - pip
   - pip:
       - sphinx_rtd_theme
