@@ -1,0 +1,8 @@
+arm_pyart
+xarray>=0.18
+dask
+pytest
+xcollection
+pydantic
+toolz
+numpy

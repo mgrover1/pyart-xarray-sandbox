@@ -3,12 +3,16 @@ channels:
   - conda-forge
   - defaults
 dependencies:
+  - python=3.9
+  - scikit-learn
+  - pys2index
   - gdal
   - numpy
   - scipy
   - matplotlib
   - pandas
   - netcdf4
+  - arm_pyart
   - pytest
   - trmm_rsl
   - wradlib
@@ -22,9 +26,10 @@ dependencies:
   - pytest
   - pkg-config
   - xcollection
+  - xoak
+  - jupyterlab
   - pip
   - pip:
-      - sphinx_rtd_theme
       - sphinx_gallery
       - sphinx-copybutton
       - nbsphinx
